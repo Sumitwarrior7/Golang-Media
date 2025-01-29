@@ -1,0 +1,59 @@
+{{define "subject"}} 🎉 Finish Registration with Golang Media 🚀 {{end}}
+
+{{define "body"}}
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333333;
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>👋 Hi {{.Username}},</p>
+      <p>✨ Thanks for signing up for <strong>Golang Media</strong>. We're thrilled to have you on board!</p>
+      <p>✅ Before you can start enjoying all the amazing features, please confirm your email address by clicking the link below:</p>
+      <p>
+        <a href="{{.ActivationUrl}}" target="_blank">{{.ActivationUrl}}</a>
+      </p>
+      <p>🛠️ If you'd prefer, you can manually activate your account by copying and pasting the code from the link above into your browser.</p>
+      <p>🙈 Didn't sign up for Golang Media? No worries—you can safely ignore this email.</p>
+      <p>💙 Thanks,</p>
+      <p><strong>The Golang Media Team</strong></p>
+      <div class="footer">
+        <p>📩 Need help? Contact us at <a href="mailto:support@golangmedia.com">support@golangmedia.com</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+{{end}}
